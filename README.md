@@ -1,5 +1,14 @@
 <p align="center">
-  <img src="docs/assets/conductor-banner.svg" alt="Conductor — Multi-Agent Orchestrator" width="100%" />
+  <img src="docs/assets/conductor-banner.png" alt="Conductor — Multi-Agent Orchestrator" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://conductor-operator-95044197271.asia-south1.run.app">
+    <img src="https://img.shields.io/badge/LIVE%20OPERATOR-Open%20control%20plane-22c55e?style=for-the-badge" alt="Live Operator" />
+  </a>
+  <a href="https://conductor-operator-95044197271.asia-south1.run.app">
+    <img src="https://img.shields.io/badge/CLOUD%20RUN-asia--south1-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Cloud Run" />
+  </a>
 </p>
 
 <p align="center">
@@ -15,6 +24,11 @@
 
 <p align="center">
   <strong>Multi-Agent Orchestrator + Coding Agent control plane — Hermes plans &amp; verifies, specialists execute, humans approve risk.</strong>
+</p>
+
+<p align="center">
+  <b>Live:</b>
+  <a href="https://conductor-operator-95044197271.asia-south1.run.app"><strong>https://conductor-operator-95044197271.asia-south1.run.app</strong></a>
 </p>
 
 <p align="center">
@@ -78,11 +92,12 @@ Intake (CLI · cron · messaging)
 
 | Surface | Target |
 |---------|--------|
-| **Operator (web)** | [conductor-operator · Cloud Run](https://conductor-operator-95044197271.asia-south1.run.app) |
+| **Operator (web)** | **[Open live control plane →](https://conductor-operator-95044197271.asia-south1.run.app)** |
+| **Direct URL** | `https://conductor-operator-95044197271.asia-south1.run.app` |
 | **Orchestrator host** | GCE `conductor-hermes` · `asia-south1-a` |
 | **Models** | OpenRouter free routing (`openrouter/free`) by default |
 
-Open the operator URL for the control plane board, approvals, and audit.
+Use the live operator for board, approvals, and audit.
 
 ---
 
