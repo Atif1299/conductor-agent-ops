@@ -1,0 +1,27 @@
+{
+  "name": "conductor-dual-stack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Conductor — Multi-Agent Orchestrator + Coding Agent (Hermes · Claude Code · MCP)",
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "sample-target"
+  ],
+  "scripts": {
+    "dev": "node ./node_modules/next/dist/bin/next dev apps/operator -p 3300",
+    "build": "node ./node_modules/typescript/bin/tsc -p packages/contracts/tsconfig.json && node ./node_modules/next/dist/bin/next build apps/operator",
+    "start": "node ./node_modules/next/dist/bin/next start apps/operator -p 3300",
+    "seed": "node ./node_modules/tsx/dist/cli.mjs scripts/seed-demo.ts",
+    "sim": "node ./node_modules/tsx/dist/cli.mjs scripts/run-scenario-sim.ts",
+    "test:sample": "node ./node_modules/tsx/dist/cli.mjs --test sample-target/tests/invoice-webhook.test.ts sample-target/tests/rates-client.test.ts",
+    "typecheck": "node ./node_modules/typescript/bin/tsc -p packages/contracts/tsconfig.json --noEmit && node ./node_modules/typescript/bin/tsc -p apps/operator/tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

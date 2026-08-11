@@ -1,0 +1,20 @@
+# Hermes OpenRouter — FREE models only (no paid Claude/GPT by default)
+
+model:
+  provider: openrouter
+  default: openrouter/free
+
+fallback_providers:
+  - provider: openrouter
+    model: openrouter/free
+
+provider_routing:
+  sort: "throughput"
+
+policy:
+  auto_merge_main: false
+  max_child_agents: 2
+  require_human_for:
+    - merge_to_main
+    - production_migrations
+    - secrets_touching_changes

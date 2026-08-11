@@ -1,0 +1,14 @@
+# Optional local stack sketch — operator UI + volume for data.
+# Hermes/Claude Code still run on host (or replace hermes service when you pin an image).
+
+services:
+  conductor:
+    image: node:22-bookworm
+    working_dir: /app
+    volumes:
+      - ../:/app
+    ports:
+      - "3300:3300"
+    command: bash -lc "npm install && npm run seed && npm run dev -- -H 0.0.0.0"
+    environment:
+      - NODE_ENV=development

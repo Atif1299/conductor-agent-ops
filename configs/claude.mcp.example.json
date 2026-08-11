@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "hermes": {
+      "command": "hermes",
+      "args": ["mcp", "serve"],
+      "description": "Hermes orchestration agent (OpenRouter-backed) — board notes, channel, task status"
+    }
+  },
+  "_notes": {
+    "llm": "Models for Hermes itself come from OpenRouter (OPENROUTER_API_KEY), not this file.",
+    "claude_code_cli": "Native Anthropic Claude Code CLI still uses Anthropic auth if installed. Product role name remains Claude Code path; OpenRouter Claude models power Hermes coding loops without Anthropic console."
+  }
+}
