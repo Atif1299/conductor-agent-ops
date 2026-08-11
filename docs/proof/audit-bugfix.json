@@ -1,0 +1,45 @@
+[
+  {
+    "id": "aud_msoivako_vkp268",
+    "taskId": "task_msoivako_ggrnub",
+    "type": "approval_requested",
+    "message": "Human approval required (merge gate / high risk)",
+    "actor": "hermes",
+    "createdAt": "2026-08-11T10:33:16.872Z"
+  },
+  {
+    "id": "aud_msoivako_3bblgj",
+    "taskId": "task_msoivako_ggrnub",
+    "type": "worker_completed",
+    "message": "Worker returned result; safety gate → needs_human",
+    "actor": "claude_code",
+    "createdAt": "2026-08-11T10:33:16.872Z"
+  },
+  {
+    "id": "aud_msoivako_o065uu",
+    "taskId": "task_msoivako_ggrnub",
+    "type": "worker_started",
+    "message": "Claude Code worker started",
+    "actor": "claude_code",
+    "createdAt": "2026-08-11T10:33:16.872Z"
+  },
+  {
+    "id": "aud_msoivako_vv0jwd",
+    "taskId": "task_msoivako_ggrnub",
+    "type": "brief_issued",
+    "message": "Delegation brief issued by Hermes",
+    "actor": "hermes",
+    "createdAt": "2026-08-11T10:33:16.872Z"
+  },
+  {
+    "id": "aud_msoivako_qpv6dn",
+    "taskId": "task_msoivako_ggrnub",
+    "type": "task_created",
+    "message": "Task created: Bugfix: invoice webhook retries & logging",
+    "actor": "system",
+    "meta": {
+      "source": "telegram"
+    },
+    "createdAt": "2026-08-11T10:33:16.872Z"
+  }
+]

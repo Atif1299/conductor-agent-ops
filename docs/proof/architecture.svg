@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420">
+  <rect width="960" height="420" fill="#e8eef2"/>
+  <text x="40" y="40" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#0e1419">Conductor dual-stack</text>
+  <text x="40" y="62" font-family="Consolas, monospace" font-size="12" fill="#0f6e56">Hermes plans · Claude Code executes · Humans approve risk</text>
+
+  <rect x="40" y="90" width="180" height="90" rx="10" fill="#f7f5f1" stroke="#0e141933"/>
+  <text x="55" y="120" font-family="Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#0e1419">Intake</text>
+  <text x="55" y="145" font-family="Segoe UI, sans-serif" font-size="12" fill="#3a4652">Telegram / CLI / cron</text>
+
+  <rect x="280" y="90" width="200" height="90" rx="10" fill="#f7f5f1" stroke="#0f6e56"/>
+  <text x="295" y="120" font-family="Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#0e1419">Hermes</text>
+  <text x="295" y="145" font-family="Segoe UI, sans-serif" font-size="12" fill="#3a4652">memory · brief · verify</text>
+
+  <rect x="540" y="90" width="180" height="90" rx="10" fill="#f7f5f1" stroke="#1a4a6e"/>
+  <text x="555" y="120" font-family="Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#0e1419">Claude Code</text>
+  <text x="555" y="145" font-family="Segoe UI, sans-serif" font-size="12" fill="#3a4652">worktree · tests · PR</text>
+
+  <rect x="780" y="90" width="140" height="90" rx="10" fill="#f7f5f1" stroke="#9a5b12"/>
+  <text x="795" y="120" font-family="Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#0e1419">Human</text>
+  <text x="795" y="145" font-family="Segoe UI, sans-serif" font-size="12" fill="#3a4652">approve risk</text>
+
+  <path d="M220 135 H280" stroke="#0e141999" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M480 135 H540" stroke="#0f6e56" stroke-width="2"/>
+  <text x="490" y="125" font-family="Consolas, monospace" font-size="11" fill="#1a4a6e">MCP</text>
+  <path d="M720 135 H780" stroke="#0e141999" stroke-width="2" marker-end="url(#a)"/>
+
+  <rect x="280" y="230" width="400" height="100" rx="12" fill="#ffffffb8" stroke="#0e141933"/>
+  <text x="300" y="265" font-family="Segoe UI, sans-serif" font-size="14" font-weight="600" fill="#0e1419">Conductor Operator UI</text>
+  <text x="300" y="292" font-family="Segoe UI, sans-serif" font-size="12" fill="#3a4652">Board · Briefs · Approvals · Audit · Settings</text>
+  <text x="300" y="312" font-family="Consolas, monospace" font-size="11" fill="#6b7885">auto_merge_main = false</text>
+
+  <path d="M380 180 V230" stroke="#0e141999" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M630 180 V230" stroke="#0e141999" stroke-width="2"/>
+
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#0e141999"/>
+    </marker>
+  </defs>
+</svg>
