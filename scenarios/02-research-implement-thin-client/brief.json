@@ -1,0 +1,22 @@
+{
+  "id": "scenario_thin_client",
+  "title": "Research + implement: Rates API thin client",
+  "highRisk": false,
+  "requiresApproval": false,
+  "source": "cli",
+  "brief": {
+    "objective": "Implement a thin HTTP client for the sample FX rates endpoint with timeout and typed response.",
+    "whyItMatters": "Integration code should be isolated, testable, and fail loudly on network timeouts before it touches business logic.",
+    "doneCriteria": [
+      "File `src/rates-client.ts` exists",
+      "Client tests pass",
+      "Timeout defaults to 3000ms and is overridable"
+    ],
+    "boundaries": [
+      "Do not add a new framework",
+      "Do not hardcode production API keys",
+      "Keep the client under 80 lines"
+    ],
+    "returnFormat": "Summary + risks + file list + test output"
+  }
+}

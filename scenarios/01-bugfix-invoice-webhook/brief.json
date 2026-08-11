@@ -1,0 +1,23 @@
+{
+  "id": "scenario_bugfix",
+  "title": "Bugfix: invoice webhook retries & logging",
+  "highRisk": true,
+  "requiresApproval": true,
+  "source": "telegram",
+  "brief": {
+    "objective": "Add retry + structured logging to the invoice webhook handler and open a PR.",
+    "whyItMatters": "Failed Stripe/invoice webhooks silently drop revenue events; retries and logs restore reliability and ops visibility.",
+    "doneCriteria": [
+      "Unit tests for retry path pass",
+      "Webhook returns 200 after successful processing",
+      "Failed deliveries are logged with invoiceId and attempt count",
+      "Does not auto-merge to main"
+    ],
+    "boundaries": [
+      "Do not touch billing database migrations",
+      "Do not change payment amount calculation",
+      "Do not auto-merge to main"
+    ],
+    "returnFormat": "PR description + files changed + risks; confirm tests pass or show failing output"
+  }
+}
