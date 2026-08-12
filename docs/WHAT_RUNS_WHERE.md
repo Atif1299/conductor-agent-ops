@@ -6,4 +6,4 @@
 | **Hermes** (always-on agent) | Compute Engine | `conductor-hermes` (asia-south1-a) |
 | **LLM** | OpenRouter free | `openrouter/free` |
 
-Browser → Conductor. Hermes → OpenRouter free → Conductor API.
+Browser → Conductor UI. Hermes (GCE) → OpenRouter free → Conductor intake API → board.
