@@ -120,6 +120,15 @@ export function canTransition(from: TaskStatus, to: TaskStatus): boolean {
   return ALLOWED_TRANSITIONS[from].includes(to);
 }
 
+/** Human-readable labels for operator UI columns. */
+export const TASK_STATUS_LABELS: Record<TaskStatus, string> = {
+  queued: "Queued",
+  working: "Working",
+  needs_human: "Needs human",
+  done: "Done",
+  failed: "Failed",
+};
+
 export function newId(prefix: string): string {
   return `${prefix}_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`;
 }
