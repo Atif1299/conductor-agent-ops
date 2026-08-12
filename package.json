@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "Conductor — Multi-Agent Orchestrator + Coding Agent (Hermes · Claude Code · MCP)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Atif1299/conductor-agent-ops.git"
+  },
   "workspaces": [
     "packages/*",
     "apps/*",
