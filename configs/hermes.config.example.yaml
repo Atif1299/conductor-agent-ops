@@ -12,6 +12,7 @@ provider_routing:
   sort: "throughput"
 
 policy:
+  # High-risk actions stay in needs_human until an operator approves.
   auto_merge_main: false
   max_child_agents: 2
   require_human_for:
