@@ -120,6 +120,10 @@ export function canTransition(from: TaskStatus, to: TaskStatus): boolean {
   return ALLOWED_TRANSITIONS[from].includes(to);
 }
 
+export function isTerminalStatus(status: TaskStatus): boolean {
+  return status === "done" || status === "failed";
+}
+
 /** Human-readable labels for operator UI columns. */
 export const TASK_STATUS_LABELS: Record<TaskStatus, string> = {
   queued: "Queued",
